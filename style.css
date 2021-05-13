@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://images.wallpaperscraft.com/image/piano_silhouette_space_156662_3840x2400.jpg); 
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+.taskbar{
+    width: 860px;
+    margin: auto;
+}
+
+.taskbar ul{
+    list-style: none;
+    margin-top: 10%;
+}
+
+.taskbar ul li{
+    background: #3f3b3b;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    font-family: Arial;
+}
+
+.taskbar ul li:hover{
+    background: crimson;
+}
+
+.taskbar ul ul{
+    display: none;
+}
+
+.taskbar ul li:hover > ul{
+    display: block;
+    margin-top: 0%;
+}
+
+.taskbar ul ul ul{
+    margin-left: 200px;
+    top: 0;
+    position: absolute;
+}
