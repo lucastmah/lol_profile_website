@@ -6,29 +6,31 @@
 header{
     background-image: url(piano.jpg);
     background-size: cover;
-    grid-column: 1 / span 3;
     width: 100%;
     height: 100px;
 }
 
 body{
     background-color: #302e2e; 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: block;
 }
 
-nav{
+.menu{
+    position: relative;
+    box-sizing: border-box;
     width: 100%;
     margin-top: 20px;
-    grid-column: 1 / span 3;
+    height: 50px;
 }
 
-nav ul{
+.menu ul{
     list-style: none;
     /*margin-top: 10%;*/
 }
 
-nav ul li{
+.menu ul li{
+    z-index: 100;
+    display: block;
     background: #3f3b3b;
     width: 200px;
     height: 50px;
@@ -41,32 +43,31 @@ nav ul li{
     font-family: Helvetica;
 }
 
-nav ul li:hover{
+.menu ul li:hover{
     background: crimson;
 }
 
-nav ul ul{
+.menu ul ul{
     display: none;
     width: 100%;
 }
 
-nav ul li:hover > ul{
+.menu ul li:hover > ul{
     display: block;
     margin-top: 0%;
 }
 
-nav ul ul ul{
+.menu ul ul ul{
     margin-left: 100%;
     top: 0;
     position: absolute;
 }
 
 .searchBox{
+    position: relative;
     margin-top: 20px;
     background-color: crimson;
-    grid-column: 1 / span 3;
     height: 50px;
-    display: block;
 }
 
 .searchField{
