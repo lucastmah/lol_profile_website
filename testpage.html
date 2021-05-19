@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>My Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
+<header>
+    
+</header>
+
 <body>
 
-
-    <div class="taskbar">
+    <nav>
         <ul>
             <li>Video Entertainment
                 <ul>
@@ -66,28 +69,19 @@
                 </ul>
             </li>
         </ul>
-    </div>
+    </nav>
 
     <script src="searchScript.js"></script>
 
-
-    <div class="searchbar_enclosure">
-        <table class="searchbar">
-            <tr>
-                <td>
-                    <input type="text" placeholder="search for" name="searchBar" id="searchBar">
-                </td>
-                <td>
-                    <a href="#">
-                        <span class="material-icons">
-                            search
-                            </span>
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <div class="searchBox">
+        <div class="searchField">
+            <input id="summoner" type="text" placeholder="enter a summoner name">
+        </div>
+        
+        <div class="submitButton">
+            <button id="submit">Submit</button>
+        </div>
     </div>
-
 
 </body>
 </html>

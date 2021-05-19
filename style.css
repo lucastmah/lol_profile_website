@@ -3,24 +3,32 @@
     padding: 0;
 }
 
-body{
-    background-image: url(https://images.wallpaperscraft.com/image/piano_silhouette_space_156662_3840x2400.jpg); 
-    -webkit-background-size: cover;
+header{
+    background-image: url(piano.jpg);
     background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
-.taskbar{
-    width: 800px;
-    margin: auto;
+    grid-column: 1 / span 3;
+    width: 100%;
+    height: 100px;
 }
 
-.taskbar ul{
+body{
+    background-color: #302e2e; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav{
+    width: 100%;
+    margin-top: 20px;
+    grid-column: 1 / span 3;
+}
+
+nav ul{
     list-style: none;
-    margin-top: 10%;
+    /*margin-top: 10%;*/
 }
 
-.taskbar ul li{
+nav ul li{
     background: #3f3b3b;
     width: 200px;
     height: 50px;
@@ -28,26 +36,61 @@ body{
     text-align: center;
     float: left;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
-    font-family: Arial;
+    font-family: Helvetica;
 }
 
-.taskbar ul li:hover{
+nav ul li:hover{
     background: crimson;
 }
 
-.taskbar ul ul{
+nav ul ul{
     display: none;
+    width: 100%;
 }
 
-.taskbar ul li:hover > ul{
+nav ul li:hover > ul{
     display: block;
     margin-top: 0%;
 }
 
-.taskbar ul ul ul{
-    margin-left: 200px;
+nav ul ul ul{
+    margin-left: 100%;
     top: 0;
     position: absolute;
+}
+
+.searchBox{
+    margin-top: 20px;
+    background-color: crimson;
+    grid-column: 1 / span 3;
+    height: 50px;
+    display: block;
+}
+
+.searchField{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.searchField input{
+    height: 36px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.submitButton{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 414px;
+}
+
+.submitButton button{
+    height: 40px;
+    width: 80px;
+    font-family: Helvetica;
+    font-size: 20px;
 }
