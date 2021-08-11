@@ -19,7 +19,6 @@ body{
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    margin-top: 20px;
     height: 50px;
 }
 
@@ -65,33 +64,29 @@ body{
 
 .searchBox{
     position: relative;
-    margin-top: 20px;
+    margin: 0 auto;
     background-color: crimson;
     height: 50px;
+    width: 800px;
 }
 
 .searchField{
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-.searchField input{
-    height: 36px;
-    width: 400px;
-    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px 100px 15px 10px;
+    font-size: 16px;
     font-family: Helvetica;
+    box-sizing: border-box;
 }
 
 .submitButton{
+    display: block;
     position: absolute;
-    margin-top: 5px;
-    margin-left: 414px;
-}
-
-.submitButton button{
-    height: 40px;
-    width: 80px;
+    height: 30px;
+    width: 60px;
     font-family: Helvetica;
-    font-size: 20px;
+    font-size: 16px;
+    right: 0;
+    top: 0;
+    margin: 10px 10px 0 0;
 }

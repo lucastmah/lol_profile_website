@@ -71,17 +71,11 @@
         </ul>
     </div>
 
-    <!--<script src="searchScript.js"></script>-->
-
-    <div class="searchBox">
-        <div class="searchField">
-            <input id="summoner" type="text" placeholder="enter a summoner name">
-        </div>
+    <form class="searchBox" id="search" autocomplete="off" type="submit" action="summoner.html" method="GET">
+        <input name="summoner" class="searchField" type="text" placeholder="enter a summoner name">
         
-        <div class="submitButton">
-            <button id="submit">Submit</button>
-        </div>
-    </div>
+        <button id="enter" class="submitButton" type="submit">Submit</button>
+    </form>
 
 </body>
 </html>
