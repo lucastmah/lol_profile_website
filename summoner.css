@@ -1,0 +1,302 @@
+/*
+General Changes
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #161536;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.content_container {
+    margin: auto;
+    width: 1000px;
+}
+
+/*
+Player Card Info
+*/
+.player_card_container {
+    position: relative;
+    display: flex;
+    height: 170px;
+    background-image: url("/dark_blue_background.jpg");
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.iconBox {
+    display: inline-block;
+    width: 170px;
+}
+
+.summonerIcon {
+    position: relative;
+    left: 30px;
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+}
+
+.summonerDetails {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.summonerName {
+    position: relative;
+    left: 30px;
+}
+
+/*
+Rank Info
+*/
+.player_rank_container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+}
+
+.solo_rank_box, .flex_rank_box {
+    position: relative;
+    display: inline-block;
+    background-image: url("/blue_background.jpg");
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 380px;
+    height: 200px;
+}
+
+.soloRankText, .flexRankText {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+.player_solo_rank_container, .player_flex_rank_container {
+    position: relative;
+    display: flex;
+    width: 360px;
+    margin-left: 30px;
+}
+
+.soloRankIcon, .flexRankIcon {
+    display: inline-block;
+}
+
+.soloRankedEmblem, .flexRankedEmblem {
+    position: relative;
+    width: 140px;
+    height: 150px;
+}
+
+.soloRankInfo, .flexRankInfo {
+    display: table-cell;
+    padding: 30px 0 0 25px;
+    width: 160px;
+    text-align: center;
+}
+
+.soloRank, .flexRank, .soloRankLP, .flexRankLP, .solo_win_loss_box, .flex_win_loss_box {
+    display: block;
+}
+
+.soloWins, .flexWins, .soloLosses, .flexLosses {
+    font-weight: normal;
+}
+
+.solo_win_ratio_box, .flex_win_ratio_box {
+    display: block;
+}
+
+.soloWinRatio, .flexWinRatio {
+    font-weight: normal;
+}
+
+/*
+Match List
+*/
+.match_list_container {
+    position: relative;
+}
+
+/*
+Single Game Container
+*/
+.game_container {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin: 0 0 10px 0;
+}
+
+.matchWin, .matchLoss, .matchDraw {
+    position: relative;
+    height: 120px;
+    display: flex;
+}
+
+.matchWin {
+    background-color: rgb(36, 51, 117);
+}
+
+.matchLoss {
+    background-color: rgb(114, 40, 40);
+}
+
+.matchDraw {
+    background-color: rgb(100, 90, 90);
+}
+
+.matchDetails {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 130px;
+    height: 100%;
+}
+
+.gameType {
+    display: block;
+}
+
+.gameOption {
+    font-size: 16px;
+}
+
+.gameMap {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.gameTime {
+    display: block;
+}
+
+.gameLength {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.playerStats {
+    position: relative;
+    display: flex;
+    width: 400px;
+}
+
+.generalInfo_box {
+    position: relative;
+    display: table;
+    width: 140px;
+}
+
+.infoImage_box {
+    display: flex;
+}
+
+.playerChampImage_box {
+    position: relative;
+    margin-top: 5px;
+}
+
+.playerChampImage {
+    width: 90px;
+    height: 90px;
+}
+
+.summoner_spell_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.summonerSpell {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.champName_box {
+    text-align: center;
+}
+
+.champName {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.playerScoreline_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+}
+
+.kdaRatio {
+    font-size: 14px;
+}
+
+.ingameStats_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80px;
+}
+
+.playerLevel {
+    font-size: 14px;
+}
+
+.playerCS {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.playerKP {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.matchPlayers {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-flow: column;
+    margin: 5px 0 0 0;
+    width: 400px;
+    height: 110px;
+}
+
+.matchPlayers>span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.playerMiniChampionImage {
+    width: 16px;
+    height: 16px;
+}

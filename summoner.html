@@ -3,18 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <title>Summoner Page</title>
+    <link rel="stylesheet" type="text/css" href="summoner.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <header>
-
 </header>
 
 <body>
-    <p id="displayName"></p>
-    <image id="rankEmblem"></image>
-    <image id="summonerIcon"></image>
+    <div class="content_container">
+        <div class="player_card_container">
 
+            <div class="iconBox">
+                <image id="summonerIcon" class="summonerIcon"></image>
+            </div>
+
+            <div class="summonerDetails">
+                <span id="summonerName" class="summonerName"></span>
+            </div> 
+
+        </div>
+        
+        <div class="player_rank_container">
+
+            <div class="solo_rank_box">
+                <span class="soloRankText">Ranked Solo</span>
+                <div class="player_solo_rank_container">
+                    <div class="soloRankIcon">
+                        <image id="soloRankEmblem" class="soloRankedEmblem"></image>
+                    </div>
+                    <div class="soloRankInfo">
+                        <div class="soloRank">
+                            <span id="soloSummonerRank" class="soloSummonerRank"></span>
+                        </div>
+                        <div class="soloRankLP">
+                            <span id="soloLP" class="soloLP"></span>
+                        </div>
+                        <div class="solo_win_loss_box">
+                            <span id="soloWins" class="soloWins"></span>
+                            <span id="soloLosses" class="soloLosses"></span>
+                        </div>
+                        <div class="solo_win_ratio_box">
+                            <span id="soloWinRatio" class="soloWinRatio"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex_rank_box">
+                <span class="flexRankText">Ranked Flex</span>
+                <div class="player_flex_rank_container">
+                    <div class="flexRankIcon">
+                        <image id="flexRankEmblem" class="flexRankedEmblem"></image>
+                    </div>
+                    <div class="flexRankInfo">
+                        <div class="flexRank">
+                            <span id="flexSummonerRank" class="flexSummonerRank"></span>
+                        </div>
+                        <div class="flexRankLP">
+                            <span id="flexLP" class="flexLP"></span>
+                        </div>
+                        <div class="flex_win_loss_box">
+                            <span id="flexWins" class="flexWins"></span>
+                            <span id="flexLosses" class="flexLosses"></span>
+                        </div>
+                        <div class="flex_win_ratio_box">
+                            <span id="flexWinRatio" class="flexWinRatio"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="match_list_container">
+            <div id="game_container" class="game_container">
+                <div id="matchResult" class="matchWin">
+
+                    <div class="matchDetails">
+                        <span id="winTag" class="winTag"></span>
+                        <div class="gameMode">
+                            <span id="gameOption" class="gameOption"></span>
+                        </div>
+                        <div class="gameType">
+                            <span id="gameMap" class="gameMap"></span>
+                        </div>
+                        <div class="gameTime">
+                            <span id="gameLength" class="gameLength"></span>
+                        </div>
+                    </div>
+
+                    <div class="playerStats">
+                        <div class="generalInfo_box">
+                            <div class="infoImage_box">
+                                <div class="playerChampImage_box">
+                                    <image id="playerChampImage" class="playerChampImage"></image>
+                                </div>
+
+                                <div class="summoner_spell_box">
+                                    <div class="summonerSpell_D_box">
+                                        <image id="summonerSpell_D" class="summonerSpell"></image>
+                                    </div>
+                                    <div class="summonerSpell_F_box">
+                                        <image id="summonerSpell_F" class="summonerSpell"></image>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="champName_box">
+                                <span id="champName" class="champName"></span>
+                            </div>
+                        </div>
+
+                        <div class="playerScoreline_box">
+                            <div class="kda_box">
+                                <span id="kda" class="kda"></span>
+                            </div>
+                            <div class="kdaRatio_box">
+                                <span id="kdaRatio" class="kdaRatio"></span>
+                            </div>
+                        </div>
+
+                        <div class="ingameStats_box">
+                            <div class="playerLevel_box">
+                                <span id="playerLevel" class="playerLevel"></span>
+                            </div>
+                            <div class="playerCS_box">
+                                <span id="playerCS" class="playerCS"></span>
+                            </div>
+                            <div class="playerKP_box">
+                                <span id="playerKP" class="playerKP"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="matchPlayers" class="matchPlayers"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="searchScript.js"></script>
 </body>
 </html>
