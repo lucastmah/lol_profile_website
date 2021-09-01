@@ -5,7 +5,7 @@
 
     $NALOL = "https://na1.api.riotgames.com/lol/";
     $americaLOL = "https://americas.api.riotgames.com/lol/";
-    $apiKey = "api_key=RGAPI-1eb32fe4-938b-45f6-a3ce-27211d066a5b";
+    $apiKey = "api_key=~~insert key here~~";
 
     //get ID's for given summoner
     if(isset($_GET['summoner'])) {
