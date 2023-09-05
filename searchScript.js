@@ -1,4 +1,4 @@
-const serverURL = "http://54.187.199.13/test.php";
+const serverURL = "http://ww01.infinityfreeapp.com/?pid=9POT3387I&pbsubid=2920e9e9-50a1-42f2-986f-390c02a5fe86&noads=http%3A%2F%2Fww01.infinityfreeapp.com%2F%3Fskipskenzo%3Dtrue";
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const summonerName = urlSearchParams.get("summoner");
