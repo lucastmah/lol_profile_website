@@ -22,6 +22,38 @@ span {
 }
 
 /*
+Search Bar
+*/
+.searchBox{
+    position: relative;
+    margin: 0 auto;
+    background-color: crimson;
+    height: 50px;
+    width: 800px;
+}
+
+.searchField{
+    display: block;
+    width: 100%;
+    padding: 15px 100px 15px 10px;
+    font-size: 16px;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+.submitButton{
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    font-family: Helvetica;
+    font-size: 16px;
+    right: 0;
+    top: 0;
+    margin: 10px 10px 0 0;
+}
+
+/*
 Player Card Info
 */
 .player_card_container {
